@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-dhung
+spec:
+  containers:
+    - image: dhung04/hello-kube
+      name: hello-dhung
+      ports:
+        - containerPort: 3000
+          protocol: TCP
